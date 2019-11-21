@@ -1,5 +1,6 @@
 'use strict'
 
 angular.module('phoneDetail', [
-    'ngRoute'
+    'ngRoute',
+    'core.phone'
 ]);
