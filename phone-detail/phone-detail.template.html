@@ -1,13 +1,13 @@
 <!-- TBD: Detail view for <span>{{ $ctrl.phoneId }}</span> -->
 
-<img ng-src="{{ $ctrl.phone.images[0] }}" alt="" class="phone">
+<img ng-src="{{ $ctrl.mainImageUrl }}" alt="" class="phone">
 
 <h1>{{ $ctrl.phone.name }}</h1>
 <p>{{ $ctrl.phone.description }}</p>
 
 <ul class="phone-thumbs">
     <li ng-repeat="img in $ctrl.phone.images">
-        <img ng-src="{{ img }}" alt="">
+        <img ng-src="{{ img }}" alt="" ng-click="$ctrl.setImage(img)" />
     </li>
 </ul>
 
