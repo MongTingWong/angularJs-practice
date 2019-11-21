@@ -1,5 +1,8 @@
 'use strict'
 
 angular.module('phonecatApp', [
-    'phoneList'
+    'ngRoute',
+    'core',
+    'phoneDetail',
+    'phoneList',
 ]);
